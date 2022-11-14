@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .h4{
+           font-size: 7px;
+            background-color:#2193F3;  
+            color:white; border-radius: 5px; 
+            border-color: rgb(255, 0, 0);
+            margin: 5px;
+        }
+        .body{
+            background-image: linear-gradient(135deg,#00B7D4,#2193F3,#17D1D4,#2193F3,#17D1D4,#00B7D4);
+        }
+    </style>
+    <title>Control de LED</title>
+</head>
+<body class="body" style='font-family: Century gothic; width: 50;'>
+    <center>
+        <h1>Control de luces</h1>    
+    </center>
+    <center>
+    <div style='box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.22); padding: 10px; width: 150px; display: inline-block; margin: 20px;'> 
+         <h4>Manual</h4>
+       <div style='padding: 10px;'>  
+             <h4 class="h4"></h4>
+        <button style='background-color:skyblue;  color:white; border-radius: 20px; border-color: rgb(255, 0, 0);' 
+            type='button' onClick=location.href='/Manual'>
+             <h4>Manual</h4>
+        </div> 
+        <button style='background-color:#7FFF00;  color:white; border-radius: 20px; border-color: rgb(25, 0, 0);' 
+            type='button' onClick=location.href='/LED=On'><h4>On</h4>
+        </button>
+
+        <button style='background-color:blue; color:white; border-radius: 20px; border-color: rgb(25, 0, 4);' 
+            type='button' onClick=location.href='/LED=Off'><h4>Off</h4>
+        </button>
+    </div>
+</center>
+<center>
+<div style='box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.22); padding: 10px; width: 200px; display: inline-block; margin: 20px;'> 
+        <h4>Automatico</h4>
+        <div>
+        <button style='background-color:skyblue;  color:white; border-radius: 20px; border-color: rgb(255, 0, 0);' 
+            type='button' onClick=location.href='/Auto'><h4>Automatico</h4>
+        </button> 
+        </div>
+        <div>
+                    <label>programe el tiempo de encendido</label>
+        </div>
+        <div> 
+
+        <button class="h4"
+            type='button' onClick=location.href='/Min=1'><h4>1 Min</h4>
+        </button>
+        <button class="h4"
+            type='button' onClick=location.href='/Min=2'><h4>2 Min</h4>
+        </button>
+        </div>
+        <div>
+        <button class="h4" 
+            type='button' onClick=location.href='/Min=5'><h4>5 Min</h4>
+        </button>
+         <button class="h4"
+            type='button' onClick=location.href='/Min=10'><h4>10 Min</h4>
+        </button>   
+        </div>
+
+    </div>
+</center>
+</body>
+</html>
